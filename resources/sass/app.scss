@@ -1,0 +1,41 @@
+@import "variables";
+body{
+    background: $primary-color;
+}
+.c-header{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    background: $primary-color;
+    align-items: self-start;
+}
+.shadow{
+    box-shadow: $box-shadow;
+}
+.text-shadow{
+    text-shadow: $box-shadow;
+    color: white;
+}
+.form-control{
+    color: #fff;
+    background: $primary-color;
+    border: 2px solid $second-color;
+    padding: 1rem 1rem 1.1rem;
+    caret-color: $third-color;
+    border-radius: 30px;
+    &:focus{
+        background: $primary-color;
+        border:0;
+    }
+}
+.border-top-right {
+    border-top-right-radius: 30px;
+}
+.border-bottom-right{
+    border-bottom-right-radius: 30px;
+}
+.btn-outline-danger{
+    background: $third-color;
+    border: 1px solid $third-color;
+    color: white;
+}

@@ -1,0 +1,47 @@
+body {
+  background: #141414;
+}
+
+.c-header {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  background: #141414;
+  align-items: self-start;
+}
+
+.shadow {
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.75);
+}
+
+.text-shadow {
+  text-shadow: 0px 8px 18px rgba(0, 0, 0, 0.75);
+  color: white;
+}
+
+.form-control {
+  color: #fff;
+  background: #141414;
+  border: 2px solid #1c1c1c;
+  padding: 1rem 1rem 1.1rem;
+  caret-color: #FF0000;
+  border-radius: 30px;
+}
+.form-control:focus {
+  background: #141414;
+  border: 0;
+}
+
+.border-top-right {
+  border-top-right-radius: 30px;
+}
+
+.border-bottom-right {
+  border-bottom-right-radius: 30px;
+}
+
+.btn-outline-danger {
+  background: #FF0000;
+  border: 1px solid #FF0000;
+  color: white;
+}

@@ -39,7 +39,3 @@
         </div>
     </div>
 @endsection
-@section('js')
-    <script type="text/javascript">rtLoadExternalFiles('', 'css')</script><div id='rtVideos_' class='rtVideos rtVideos_' style='display: none;'>
-        <script type='text/javascript'>setTimeout('rtDrawVideos_();', 456);</script></body>
-@endsection

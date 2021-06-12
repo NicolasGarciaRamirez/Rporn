@@ -12,7 +12,20 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
+Route::get('/test', function(){
+    \Auth::logout();
+});
+Route::get('/', function(){
     return view('home');
+});
+
+Route::get('/Login', 'homeController@login')->name('login');
+Route::name('login')->post('/Login/{pokemon?}', 'Auth\AuthController@login');
+Route::get('/Register', 'homeController@register')->name('register');
+Route::name('Register')->post('/Register', 'Auth\AuthController@register');
+
+Route::name('logout')->get('/Logout' , 'Auth\AuthController@logout');
+
+Route::group(['middleware' => ['auth']], function(){
+    Route::name('view.pokemon')->get('/get/Pokemon/{pokemon}', 'PokemonController@get');
 });

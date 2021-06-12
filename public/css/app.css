@@ -27,6 +27,7 @@ body {
   caret-color: #FF0000;
   border-radius: 30px;
 }
+
 .form-control:focus {
   background: #141414;
   border: 0;
@@ -45,3 +46,4 @@ body {
   border: 1px solid #FF0000;
   color: white;
 }
+

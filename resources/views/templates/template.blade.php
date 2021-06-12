@@ -27,8 +27,9 @@
                 <main class="c-main">
                     @yield('content')
                 </main>
+                @include('templates.footer')
+
             </div>
-            @include('templates.footer')
         </div>
     </div>
     <script src="{{ mix('/js/app.js') }}"></script>

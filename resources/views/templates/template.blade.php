@@ -27,8 +27,7 @@
                 <main class="c-main">
                     @yield('content')
                 </main>
-                @include('templates.footer')
-
+{{--                @include('templates.footer')--}}
             </div>
         </div>
     </div>

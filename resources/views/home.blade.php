@@ -36,9 +36,10 @@
             <div class="m-auto">
                 <iframe src="https://www.pornhub.com/embed/ph5f2b43a42cea4" frameborder="0" width="300" height="200" scrolling="no" allowfullscreen></iframe>
             </div>
-            <script type="text/javascript">rtLoadExternalFiles('', 'css')</script><div id='rtVideos_' class='rtVideos rtVideos_' style='display: none;'>
-            </div>
-            <script type='text/javascript'>setTimeout('rtDrawVideos_();', 456);</script></body>
         </div>
     </div>
+@endsection
+@section('js')
+    <script type="text/javascript">rtLoadExternalFiles('', 'css')</script><div id='rtVideos_' class='rtVideos rtVideos_' style='display: none;'>
+        <script type='text/javascript'>setTimeout('rtDrawVideos_();', 456);</script></body>
 @endsection

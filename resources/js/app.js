@@ -9,11 +9,13 @@ vue.use(Vuetify)
 
 import pokemon from './Pokemons/views/pokemon'
 import Only_pokemon from "../js/Pokemons/components/only_pokemon";
+import Home from "./views/home"
 
 new vue({
     el: '#app',
     components:{
         pokemon,
-        Only_pokemon
+        Only_pokemon,
+        Home
     }
 })

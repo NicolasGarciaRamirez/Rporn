@@ -163,7 +163,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../evelioproyect" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -186,6 +186,8 @@
       <workItem from="1623291189832" duration="5000" />
       <workItem from="1623291203301" duration="5977000" />
       <workItem from="1623531149839" duration="1324000" />
+      <workItem from="1623535207544" duration="6367000" />
+      <workItem from="1623597577872" duration="636000" />
     </task>
     <servers />
   </component>
@@ -205,10 +207,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="500" y="184" key="FileChooserDialogImpl" timestamp="1623532617039">
+    <state x="500" y="184" key="FileChooserDialogImpl" timestamp="1623598711080">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="500" y="184" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1623532617039" />
+    <state x="500" y="184" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1623598711080" />
     <state width="1397" height="222" key="GridCell.Tab.0.bottom" timestamp="1623294330548">
       <screen x="0" y="0" width="1440" height="860" />
     </state>

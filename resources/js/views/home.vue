@@ -1,9 +1,11 @@
 <template>
     <section>
         <div class=" d-flex flex-column flex-wrap m-auto">
-            <span class="text-white font-weight-bold mb-2">Anal</span>
-            <div>
-                <iframe class="m-auto" src="https://www.pornhub.com/embed/ph60a7cb84bbf29" frameborder="0" width="300" height="200" scrolling="no" allowfullscreen></iframe>
+            <div class="d-flex flex-row flex-wrap" >
+                <div class="p-2 text-center" style="max-width: 298px;" v-for="(video, index) in page.videos" :key="index">
+                    <video class="m-auto" :src="`https://www.pornhub.com/embed/${video.video_id}`" frameborder="0" width="320" height="220" scrolling="no" allowfullscreen :key="index"></video>
+                    <h6 class="text-white">{{ video.title }}</h6>
+                </div>
             </div>
         </div>
     </section>
@@ -12,25 +14,28 @@
 <script>
 
 export default {
+    props:['page'],
     data(){
         return {
 
         }
     },
     mounted(){
-        this.getVideos()
+        this.getIsActive()
     },
     methods:{
-        async getVideos(){
-            await axios.get('https://www.pornhub.com/webmasters/search?search=hard&tags[]=Teen&thumbsize=medium', {} , {
-                headers: {
-                    "Access-Control-Allow-Origin": "*"
+        getIsActive(){
+            let data = {
+                videos: this.page.videos
+            }
+            axios.post(`/get/is_active/`, data).then(res =>{
+                if(res.data.is_active){
+
                 }
-            }).then(res =>{
                 console.log(res)
-            }).catch(err =>{
-                console.log(err)
             })
+        
+           
         }
     }
 }

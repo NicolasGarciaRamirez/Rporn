@@ -16,7 +16,8 @@ Route::get('/test', function(){
     \Auth::logout();
 });
 Route::get('/', function(){
-    return view('home');
+    $page = file_get_contents('https://www.pornhub.com/webmasters/search?search=hard&tags[]=Teen&thumbsize=medium');
+    return view('home',['page' => $page]);
 });
 
 Route::get('/Login', 'homeController@login')->name('login');
@@ -26,6 +27,6 @@ Route::name('Register')->post('/Register', 'Auth\AuthController@register');
 
 Route::name('logout')->get('/Logout' , 'Auth\AuthController@logout');
 
-Route::group(['middleware' => ['auth']], function(){
-    Route::name('view.pokemon')->get('/get/Pokemon/{pokemon}', 'PokemonController@get');
-});
+Route::name('view.videos')->post('/get/is_active', 'homeController@get');
+
+
